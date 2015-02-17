@@ -35,5 +35,5 @@ run_analysis <- function(){
       Xtidy <- dcast(Xmelt, subject + activity ~ ..., mean)
       dataframe <- as.data.frame(Xtidy)
       write.table(dataframe, "C://Users//User//Desktop//datasciencecoursera//xtidy.txt", row.names=FALSE)
-      return(head(Xtidy))
+      return(Xtidy)
 }
